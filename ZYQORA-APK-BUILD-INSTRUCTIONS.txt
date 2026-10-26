@@ -1,0 +1,18 @@
+ZYQORA APK BUILD (GitHub Actions)
+
+This project ZIP includes .github/workflows/zyqora-debug-apk.yml.
+
+1. Upload/extract the project into a GitHub repository (keep the .github folder).
+2. Open the repository on GitHub in a browser.
+3. Tap Actions -> Build ZYQORA APK.
+4. Tap Run workflow and confirm.
+5. Wait for the workflow to finish. If successful, open that run and download the
+   artifact named ZYQORA-debug-APK. Extract the downloaded artifact to get the APK.
+
+This creates a debug-signed APK for testing. It is not a Play Store release APK.
+If the workflow fails, open the failed run and share the first actual error from
+its build log. The APK has not been built or runtime-tested in this offline workspace.
+
+The original package ID and app architecture are preserved to avoid breaking app data
+or integrations. The playback/playlist issue still needs a build/runtime error or
+reproduction details to diagnose; the branding change alone does not repair that issue.
