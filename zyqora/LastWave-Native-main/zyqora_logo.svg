@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#111318"/>
+  <path d="M92 176 Q122 176 122 224 T152 272 T182 224 T212 176 T242 224 T272 272 T302 224 T332 176 T362 224 T392 272 T422 224" fill="none" stroke="#C7F36B" stroke-width="20" stroke-linecap="round"/>
+  <text x="256" y="360" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="62" font-weight="700" letter-spacing="3" fill="#FFFFFF">ZYQORA</text>
+</svg>
