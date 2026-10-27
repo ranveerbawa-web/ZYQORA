@@ -1,4 +1,4 @@
-package com.ZYQORA.app.ui.settings
+package com.lastwave.app.ui.settings
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Send
@@ -1297,27 +1297,6 @@ object SettingsSearchIndex {
                     type = EntryType.ACTION,
                 )
             )
-,
-                    iconTint = { MaterialTheme.colorScheme.onPrimaryContainer },
-                    parentTab = SettingsTab.ABOUT,
-                    section = "About & Community",
-                    type = EntryType.ACTION,
-                )
-            )
-,
-                    iconTint = { MaterialTheme.colorScheme.onTertiaryContainer },
-                    parentTab = SettingsTab.ABOUT,
-                    section = "About & Community",
-                    type = EntryType.ACTION,
-                )
-            )
-,
-                    iconTint = { MaterialTheme.colorScheme.onPrimaryContainer },
-                    parentTab = SettingsTab.ABOUT,
-                    section = "About & Community",
-                    type = EntryType.ACTION,
-                )
-            )
             add(
                 SettingsEntry(
                     id = "about.diagnostics",
@@ -1352,7 +1331,16 @@ object SettingsSearchIndex {
                     type = EntryType.ACTION,
                 )
             )
-,
+            add(
+                SettingsEntry(
+                    id = "about.source_code",
+                    title = "Source Code",
+                    subtitle = "View the ZYQORA source code on GitHub",
+                    keywords = listOf(
+                        "source code", "github", "repository", "open source", "project code"
+                    ),
+                    icon = Icons.Filled.Code,
+                    iconContainer = { MaterialTheme.colorScheme.secondaryContainer },
                     iconTint = { MaterialTheme.colorScheme.onSecondaryContainer },
                     parentTab = SettingsTab.ABOUT,
                     section = "About & Community",

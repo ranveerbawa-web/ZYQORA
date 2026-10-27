@@ -1234,8 +1234,8 @@ fun SettingsScreen(
                                 icon = Icons.Filled.AutoAwesome,
                                 iconContainer = MaterialTheme.colorScheme.primaryContainer,
                                 iconTint = MaterialTheme.colorScheme.onPrimaryContainer,
-                                title = stringResource(R.string.settings_lastwave_theme),
-                                subtitle = stringResource(R.string.settings_lastwave_theme_sub),
+                                title = stringResource(R.string.settings_ZYQORA_theme),
+                                subtitle = stringResource(R.string.settings_ZYQORA_theme_sub),
                                 checked = theme?.isZYQORATheme ?: false,
                                 onCheckedChange = viewModel::setZYQORATheme,
                                 position = position,
@@ -2245,7 +2245,21 @@ fun SettingsScreen(
                         isHighlighted = (highlightedSettingId == "about.check_updates"),
                     )
 
-,
+                    SettingsActionCard(
+                        icon = Icons.Filled.Code,
+                        iconContainer = MaterialTheme.colorScheme.secondaryContainer,
+                        iconTint = MaterialTheme.colorScheme.onSecondaryContainer,
+                        title = stringResource(R.string.settings_source_code),
+                        subtitle = "View the ZYQORA source code on GitHub",
+                        onClick = {
+                            val intent = Intent(
+                                Intent.ACTION_VIEW,
+                                Uri.parse("https://github.com/ranveerbawa-web/ZYQORA"),
+                            )
+                            if (!startActivitySafely(context, intent)) {
+                                viewModel.showToast(context.getString(R.string.toast_no_browser))
+                            }
+                        },
                         isHighlighted = (highlightedSettingId == "about.source_code"),
                     )
                 }
@@ -5840,4 +5854,3 @@ private fun ClarityPresetDialog(
         },
     )
 }
-
